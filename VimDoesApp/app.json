@@ -5,6 +5,11 @@
     "name": "VimDoesApp",
     "slug": "vimdoesapp",
     "sdkVersion": "36.0.0",
-    "privacy": "public"
+    "privacy": "public",
+    "version": "0.0.1",
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 }
