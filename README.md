@@ -2,7 +2,6 @@
 A app that control your sales!
 
 # VIMDoes Mobile APP
-[BackEnd] (https://github.com)
 
 # Created By
 [Affonso Brian Pereira Azevedo](https://www.github.com/affonsobrian)
