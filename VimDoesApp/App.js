@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Image, View, StyleSheet } from 'react-native';
-import UsernamePasswordFields from "./components/UsernamePasswordFields"
-import CustomButton from './components/CustomButton'
+import UsernamePasswordFields from './components/UsernamePasswordFields'
+import CustomButton from './components/CustomButtton'
 
 export default function App() {
   const screenTitle = "Bem-vindo(a)!";

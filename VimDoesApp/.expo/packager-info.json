@@ -2,8 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 20936,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "packagerPid": 9400,
+  "expoServerNgrokUrl": "https://d7-b7q.anonymous.vimdoesapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.d7-b7q.anonymous.vimdoesapp.exp.direct",
+  "ngrokPid": 18576
 }
