@@ -1,0 +1,10 @@
+{
+  "name": "VimDoesApp",
+  "displayName": "VimDoesApp",
+  "expo": {
+    "name": "VimDoesApp",
+    "slug": "vimdoesapp",
+    "sdkVersion": "36.0.0",
+    "privacy": "public"
+  }
+}
