@@ -10,9 +10,8 @@ export default function App() {
     <View style={styles.content}>
       <Text style={styles.textStyle}> {screenTitle} </Text>
       <VimDoesLogo/>
-      <UsernamePasswordFields />
-      <CustomButton />
-
+      <UsernamePasswordFields/>
+      <CustomButton/>
     </View>
   );
 };

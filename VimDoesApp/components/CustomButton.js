@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Alert, Text } from 'react-native';
 
-export default function CustomButton() {
+export default function CustomButton(props) {
     return (
         <View>
             <TouchableOpacity onPress={() => { Alert.alert('Ok'); }}>
