@@ -1,8 +1,8 @@
-import React from 'react';
+import React from '../node_modules/react';
 import { StyleSheet, View, TextInput, Button } from 'react-native';
 import VimDoesLogo from '../components/VimDoesLogo.js'
 
-const app = () => {
+const CreateUser = () => {
   var user = {
     username: '',
     password: '',
@@ -44,7 +44,7 @@ function saveUser(){
   
 }
 
-export default app;
+export default CreateUser;
 
 const styles = StyleSheet.create({
   logo: {
