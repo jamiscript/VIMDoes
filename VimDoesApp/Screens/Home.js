@@ -75,15 +75,15 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: 'Arial',
     fontWeight: 'bold',
-    fontSize: '20px'
+    fontSize: 20
   },
   customButton2: {
-    textAlign: 'flex-start',
+    textAlign: 'left',
     textAlignVertical: 'bottom',
     color: 'gray',
     fontFamily: 'Arial',
     fontWeight: 'bold',
-    fontSize: '15px'
+    fontSize: 15
   }
 });
 

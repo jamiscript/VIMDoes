@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, TextInput, Alert, AsyncStorage, Text, Dimensions } from 'react-native';
 import CustomButton from './CustomButton';
 import api from '../services/api';
+import { useNavigation } from '@react-navigation/native';
 
 export default function UsernamePasswordFields() {
 
@@ -9,6 +10,12 @@ export default function UsernamePasswordFields() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    function handleClick() {
+        const navigation = useNavigation();
+        navigation.navigate('Home');
+    }
+
+    /*
     const handleClick = async () => {
         try {
             const response = await api.post('/api/token/', {
@@ -17,6 +24,7 @@ export default function UsernamePasswordFields() {
             });
             await AsyncStorage.setItem('VIMDoes_token', response.data.access);
             Alert.alert('Logged with success');
+            // props.navigation.navigate('SignUp')
         }
         catch (error) {
             if (error.response.status === 401) {
@@ -28,6 +36,7 @@ export default function UsernamePasswordFields() {
             }
         }
     }
+    */
 
     return (
         <View style={styles.container}>
@@ -46,7 +55,7 @@ export default function UsernamePasswordFields() {
                 onChange={() => setError('')}
                 ref={(input) => { this.passwordInput = input; }}
             />
-            <CustomButton btnName="Login" action={handleClick} />
+            <CustomButton btnName="Login" action={handleClick}/>
         </View>
     );
 };
