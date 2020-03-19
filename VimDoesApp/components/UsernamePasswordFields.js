@@ -4,15 +4,16 @@ import CustomButton from './CustomButton';
 import api from '../services/api';
 import { useNavigation } from '@react-navigation/native';
 
-export default function UsernamePasswordFields() {
+export default function UsernamePasswordFields(myProp) {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
     function handleClick() {
-        const navigation = useNavigation();
-        navigation.navigate('Home');
+        console.log('UsernamePasswordFields')
+        console.log(myProp.navigate.actions.navigate)
+        myProp.navigate.actions.navigate('Home');
     }
 
     /*

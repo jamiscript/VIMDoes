@@ -67,7 +67,6 @@ const CustomButton = (prop) => {
   );
 }
 
-
 const styles = StyleSheet.create({
   customButton: {
     textAlign: 'center',
@@ -86,6 +85,5 @@ const styles = StyleSheet.create({
     fontSize: 15
   }
 });
-
 
 export default Home;

@@ -6,11 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 export default function Login(props) {
-  const signUpMessage = "Doesn't have an account? Sign up"
+  console.log('Login')
+  console.log(props.navigation)
+
+  const signUpMessage = "Don't have an account? Sign up."
   return (
     <View style={styles.container}>
       <VimDoesLogo />
-      <UsernamePasswordFields />
+      <UsernamePasswordFields navigate={props.navigation}/>
       <TouchableOpacity
         onPress={() => props.navigation.navigate('SignUp')}>
         <Text style={styles.message}>{signUpMessage}</Text>

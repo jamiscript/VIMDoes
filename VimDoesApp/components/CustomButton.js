@@ -3,6 +3,8 @@ import { View, StyleSheet, TouchableOpacity, Alert, Text } from 'react-native';
 
 
 const CustomButton = (myProp) => {
+    console.log(myProp.action)
+
     return (
         <View>
             <TouchableOpacity onPress={myProp.action}>
