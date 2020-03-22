@@ -1,6 +1,7 @@
 import React from '../node_modules/react';
 import { StyleSheet, View, TextInput, Button } from 'react-native';
 import VimDoesLogo from '../components/VimDoesLogo.js'
+import CustomButton from '../components/CustomButton'
 
 const CreateUser = () => {
   var user = {
@@ -11,26 +12,22 @@ const CreateUser = () => {
   }
   return (
     <View style={{flex: 1}}>
-      <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.container}>
       <VimDoesLogo/>
       <TextInput style={styles.input}
-        placeholder="Username"
-        value={user.username}
+        placeholder="E-mail"
       />
       <TextInput style={styles.input}
-        placeholder="Senha"
-        value={user.password}
+        placeholder="Password"
       />
       <TextInput style={styles.input}
-        placeholder="Confirme a senha"
-        value={user.confirmPassword}
+        placeholder="Confirm password"
         onChangeText={() => checkPassword()}
       />
       <TextInput style={styles.input}
-        placeholder="Email"
-        value={user.email}
+        placeholder="Username"
       />
-      <Button title="Cadastrar" onPress={() => saveUser()} ></Button>
+      <CustomButton btnName="Submit" action={saveUser}/>
       </View>
     </View>
   );
@@ -41,12 +38,18 @@ function checkPassword(){
 }
 
 function saveUser(){
-  
+  console.warn("Salvou")
 }
 
 export default CreateUser;
 
 const styles = StyleSheet.create({
+  container:{
+    flex: 1, 
+    flexDirection: 'column', 
+    justifyContent: 'center', 
+    alignItems: 'center'
+  },
   logo: {
     width: 168,
     height: 84,
