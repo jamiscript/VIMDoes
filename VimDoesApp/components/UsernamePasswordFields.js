@@ -24,7 +24,7 @@ const UsernamePasswordFields = () => {
             }
             else {
                 setError('Please fill username and password');
-                console.debug(error.response)
+                console.debug(error.response);
             }
         }
     }
