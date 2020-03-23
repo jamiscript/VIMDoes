@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'bottom',
     color: 'white',
-    fontFamily: 'Arial',
+    //fontFamily: 'Arial',
     fontWeight: 'bold',
     fontSize: 20
   },
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     textAlignVertical: 'bottom',
     color: 'gray',
-    fontFamily: 'Arial',
+    //fontFamily: 'Arial',
     fontWeight: 'bold',
     fontSize: 15
   }
