@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://j6-3gw.anonymous.vimdoesapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.j6-3gw.anonymous.vimdoesapp.exp.direct",
+  "ngrokPid": 6712
 }

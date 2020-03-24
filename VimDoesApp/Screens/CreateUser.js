@@ -1,5 +1,5 @@
 import React, { useState } from '../node_modules/react';
-import { StyleSheet, View, TextInput, AsyncStorage, Alert, Keyboard, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, View, Text, AsyncStorage, Alert, Keyboard, TouchableWithoutFeedback } from 'react-native';
 import VimDoesLogo from '../components/VimDoesLogo.js'
 import CustomButton from '../components/CustomButton.js'
 import api from '../services/api';
@@ -56,6 +56,7 @@ const CreateUser = () => {
             placeholder="Username"
             action={(text) => setUsername(text)}
           />
+          <Text style={styles.error}>{error}</Text>
           <CustomButton btnName="Submit"
             action={submitUser} />
         </View>
@@ -80,6 +81,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  error: {
+    color: 'red',
+    marginBottom: 4,
+    fontWeight: 'bold',
   },
   logo: {
     width: 168,
