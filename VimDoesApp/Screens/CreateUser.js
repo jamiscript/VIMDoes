@@ -1,17 +1,11 @@
 import React, { useState } from '../node_modules/react';
 import { StyleSheet, View, TextInput, AsyncStorage, Alert, Keyboard, TouchableWithoutFeedback } from 'react-native';
 import VimDoesLogo from '../components/VimDoesLogo.js'
-import CustomButton from '../components/CustomButton'
+import CustomButton from '../components/CustomButton.js'
 import api from '../services/api';
+import CustomTextInput from '../components/CustomTextInput.js'
 
 const CreateUser = () => {
-  var user = {
-    username: '',
-    password: '',
-    confirmPassword: '',
-    email: ''
-  }
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -46,31 +40,21 @@ const CreateUser = () => {
       <View style={{ flex: 1 }}>
         <View style={styles.container}>
           <VimDoesLogo />
-          <TextInput style={styles.input}
+          <CustomTextInput
             placeholder="E-mail"
-            onChangeText={(text) => setEmail(text)}
-            onChange={() => setError('')}
-            blurOnSubmit={false}
+            action={(text) => setEmail(text)}
           />
-          <TextInput style={styles.input}
+          <CustomTextInput
             placeholder="Password"
-            secureTextEntry={true}
-            onChangeText={(text) => setPassword(text)}
-            onChange={() => setError('')}
-            blurOnSubmit={false}
+            action={(text) => setPassword(text)}
           />
-          <TextInput style={styles.input}
+          <CustomTextInput
             placeholder="Confirm password"
-            secureTextEntry={true}
-            onChangeText={(text) => setConfirmPassword(text)}
-            onChange={() => setError('')}
-            blurOnSubmit={false}
+            action={(text) => setConfirmPassword(text)}
           />
-          <TextInput style={styles.input}
+          <CustomTextInput
             placeholder="Username"
-            onChangeText={(text) => setUsername(text)}
-            onChange={() => setError('')}
-            blurOnSubmit={false}
+            action={(text) => setUsername(text)}
           />
           <CustomButton btnName="Submit"
             action={submitUser} />
