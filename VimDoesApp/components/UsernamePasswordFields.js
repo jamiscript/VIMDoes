@@ -3,7 +3,7 @@ import { View, StyleSheet, TextInput, Alert, AsyncStorage, Text, Dimensions } fr
 import CustomButton from './CustomButton';
 import api from '../services/api';
 
-export default function UsernamePasswordFields() {
+const UsernamePasswordFields = () => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -24,7 +24,7 @@ export default function UsernamePasswordFields() {
             }
             else {
                 setError('Please fill username and password');
-                console.debug(error.response)
+                console.debug(error.response);
             }
         }
     }
@@ -71,3 +71,5 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 });
+
+export default UsernamePasswordFields;
